@@ -8,25 +8,19 @@ description: "Um guia prático para ajudar CTOs e arquitetos a tomar a decisão 
 toc: true
 ---
 
-Essa é uma das perguntas que mais recebo: **"Qual cloud provider devo usar?"**
+Essa é uma das perguntas que mais recebo: qual cloud provider usar?
 
-A resposta honesta? Depende. Mas "depende" não é útil sem contexto, então vou dar uma
-estrutura de decisão que uso com clientes.
+A resposta honesta é que depende. Mas "depende" sem contexto não ajuda ninguém, então vou mostrar como penso sobre essa decisão quando alguém me traz esse problema.
 
 ## O erro mais comum
 
-A maioria das organizações escolhe o cloud provider pelo motivo errado:
-- "Meu time conhece AWS" *(viés de familiaridade)*
-- "Azure integra com nosso Office 365" *(lock-in por conveniência)*
-- "GCP tem os melhores preços de ML" *(otimização prematura)*
+A maioria das organizações escolhe o provider pelo motivo errado. "Meu time conhece AWS" é viés de familiaridade. "Azure integra com nosso Office 365" é lock-in por conveniência. "GCP tem os melhores preços de ML" é otimização prematura.
 
-Nenhum desses critérios é necessariamente errado, mas nenhum deve ser o critério **principal**.
+Nenhum desses critérios é necessariamente errado. O problema é quando eles se tornam o critério principal, porque nenhum deles olha para onde a organização vai estar em três anos.
 
-## O framework que uso
+## O que olhar de verdade
 
-### 1. Workload fit
-
-Cada cloud tem suas forças:
+O ponto de partida é o workload. Cada provider tem uma proposta diferente e isso se reflete onde eles investem:
 
 | Provider | Melhor para |
 |----------|-------------|
@@ -34,36 +28,16 @@ Cada cloud tem suas forças:
 | **Azure** | Enterprise com Microsoft stack, Active Directory, compliance |
 | **GCP** | Big Data, ML/AI, organizações com cultura de engenharia forte |
 
-### 2. Compliance e soberania de dados
+Depois do workload, compliance e soberania de dados. Para setores regulados como financeiro, saúde e governo, a disponibilidade de regiões locais e certificações específicas pode ser determinante. Não adianta o serviço ser tecnicamente superior se ele não consegue ficar dentro das fronteiras que a regulação exige.
 
-Para setores regulados (financeiro, saúde, governo), a disponibilidade de regiões
-locais e certificações específicas pode ser determinante.
+O terceiro ponto, e o mais subestimado, é o custo total de propriedade. O preço por hora de compute é só a ponta do iceberg. Egress de dados, suporte empresarial, treinamento e certificações do time, e o custo de migração futura se você precisar sair: tudo isso entra na conta. Organizações que escolhem provider olhando só para o custo de compute costumam se surpreender negativamente quando a fatura chega.
 
-### 3. Custo total de propriedade
+Por último, estratégia de longo prazo. Você está construindo para vender a empresa nos próximos dois anos? Para escalar globalmente? Para um mercado específico com regulações próprias? A resposta muda a equação porque o custo de mudar de provider depois de três anos de investimento em managed services é considerável.
 
-Custo de nuvem ≠ preço por hora de compute. Inclua:
-- Egress de dados
-- Suporte empresarial
-- Treinamento e certificações do time
-- Custo de migração futura (lock-in)
+## O que eu recomendaria em cada cenário
 
-### 4. Estratégia de longo prazo
+Greenfield sem restrições de stack: AWS, pela maturidade do ecossistema e pela quantidade de engenheiros que já conhecem a plataforma. Microsoft shop com Active Directory e Azure DevOps já no lugar: Azure faz sentido natural. Workloads pesados de ML ou big data com time de engenharia forte: GCP pela BigQuery e pelos TPUs. Empresa madura com workloads críticos e tolerância a complexidade operacional: multi-cloud começa a fazer sentido, mas só se você tiver time para operar isso.
 
-Você está construindo para vender a empresa? Para escalar globalmente?
-Para um mercado específico? A resposta muda a equação.
+Não existe resposta universal aqui. O que existe é a decisão errada de não fazer essa pergunta cedo o suficiente, quando ainda é barato mudar de ideia.
 
-## Minha recomendação geral
-
-- **Greenfield sem restrições**: comece com AWS pela maturidade do ecossistema
-- **Microsoft shop**: Azure faz sentido pelo SSO e pelo Azure DevOps
-- **Heavy ML/data**: GCP pela BigQuery e pelos TPUs
-- **Empresa madura**: considere multi-cloud para workloads críticos
-
-## Conclusão
-
-Não existe resposta universal. O melhor cloud provider é aquele que:
-1. Atende seus requisitos técnicos atuais
-2. Não te prende desnecessariamente
-3. Seu time consegue operar com excelência
-
-Se você quiser discutir o caso específico da sua organização, [fale comigo](mailto:felipe.cidade@outlook.com).
+Se quiser discutir o caso específico da sua organização, [fale comigo](mailto:felipe.cidade@outlook.com).
