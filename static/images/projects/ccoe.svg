@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Grid lines -->
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#667eea" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#667eea" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="450" stroke="#667eea" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="450" stroke="#667eea" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="450" stroke="#667eea" stroke-opacity="0.08" stroke-width="1"/>
+  <!-- Central hub -->
+  <circle cx="400" cy="225" r="60" fill="#667eea" fill-opacity="0.12" stroke="#667eea" stroke-width="1.5" stroke-opacity="0.5"/>
+  <circle cx="400" cy="225" r="38" fill="url(#accent)" fill-opacity="0.85"/>
+  <!-- Cloud icon in hub -->
+  <g fill="white" opacity="0.9">
+    <circle cx="393" cy="222" r="10"/>
+    <circle cx="404" cy="217" r="13"/>
+    <circle cx="415" cy="221" r="10"/>
+    <rect x="383" y="222" width="42" height="14" rx="1"/>
+  </g>
+  <!-- Spokes -->
+  <line x1="400" y1="165" x2="400" y2="90"  stroke="#667eea" stroke-width="1.5" stroke-opacity="0.5"/>
+  <line x1="400" y1="285" x2="400" y2="360" stroke="#667eea" stroke-width="1.5" stroke-opacity="0.5"/>
+  <line x1="340" y1="225" x2="180" y2="225" stroke="#667eea" stroke-width="1.5" stroke-opacity="0.5"/>
+  <line x1="460" y1="225" x2="620" y2="225" stroke="#667eea" stroke-width="1.5" stroke-opacity="0.5"/>
+  <!-- Satellite nodes -->
+  <circle cx="400" cy="80" r="28" fill="#0d0d1f" stroke="#764ba2" stroke-width="1.5"/>
+  <text x="400" y="77" text-anchor="middle" fill="#764ba2" font-size="10" font-family="monospace" font-weight="700">IaC</text>
+  <text x="400" y="90" text-anchor="middle" fill="#8888aa" font-size="8" font-family="monospace">Terraform</text>
+  <circle cx="400" cy="370" r="28" fill="#0d0d1f" stroke="#764ba2" stroke-width="1.5"/>
+  <text x="400" y="367" text-anchor="middle" fill="#764ba2" font-size="9" font-family="monospace" font-weight="700">CI/CD</text>
+  <text x="400" y="380" text-anchor="middle" fill="#8888aa" font-size="8" font-family="monospace">Azure DevOps</text>
+  <circle cx="165" cy="225" r="28" fill="#0d0d1f" stroke="#667eea" stroke-width="1.5"/>
+  <text x="165" y="222" text-anchor="middle" fill="#667eea" font-size="9" font-family="monospace" font-weight="700">SecOps</text>
+  <text x="165" y="235" text-anchor="middle" fill="#8888aa" font-size="8" font-family="monospace">Govern.</text>
+  <circle cx="635" cy="225" r="28" fill="#0d0d1f" stroke="#667eea" stroke-width="1.5"/>
+  <text x="635" y="222" text-anchor="middle" fill="#667eea" font-size="9" font-family="monospace" font-weight="700">K8s</text>
+  <text x="635" y="235" text-anchor="middle" fill="#8888aa" font-size="8" font-family="monospace">Containers</text>
+  <!-- Title -->
+  <text x="400" y="420" text-anchor="middle" fill="#667eea" font-size="13"
+        font-family="'Courier New', monospace" font-weight="700" opacity="0.7">Cloud Center of Excellence</text>
+</svg>

@@ -36,7 +36,7 @@ Menus:
 params:
   title: "Felipe Cidade"
   description: "Tech Manager | Cloud Solutions & Software Architecture | dti digital"
-  favicon: "/images/favicon.png"
+  favicon: "/images/favicon.svg"
   useBootstrapCDN: false
   animate: true
 
@@ -210,11 +210,9 @@ params:
       - title: Microsoft Certified – Azure Fundamentals
         content: Microsoft · Mar 2023
         url: "https://www.credly.com/badges"
-        image: /images/certs/azure-fundamentals.png
       - title: Fundamentals of Cloud FinOps
         content: Board Infinity · Mar 2025
         url: "https://www.credential.net"
-        image: /images/certs/finops.png
 
   projects:
     enable: true
@@ -225,7 +223,7 @@ params:
           Liderança técnica do CCoE de um cliente internacional na dti digital.
           Definição de padrões de migração on-premise→Azure, arquiteturas de referência
           e biblioteca de módulos Terraform reutilizáveis adotados por +10 squads.
-        image: /images/projects/ccoe.jpg
+        image: /images/projects/ccoe.svg
         featured:
           name: Leia o post
           link: /blogs/ccoe-cloud-center-of-excellence
@@ -243,7 +241,7 @@ params:
           Implementação de governança de custos cloud em ambiente enterprise — políticas de
           shutdown, rightsizing e tagging — reduzindo desperdício e gerando economia significativa
           em fatura mensal de nuvem.
-        image: /images/projects/finops.jpg
+        image: /images/projects/finops.svg
         featured:
           name: Podcast Entre Chaves
           link: https://lnkd.in/dRPRZTa7

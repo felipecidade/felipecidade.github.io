@@ -5,7 +5,6 @@ draft: false
 author: "Felipe Cidade"
 tags: ["aws", "azure", "gcp", "arquitetura", "estratégia"]
 description: "Um guia prático para ajudar CTOs e arquitetos a tomar a decisão certa — sem viés de vendor."
-image: /images/blog/cloud-providers.jpg
 toc: true
 ---
 

@@ -5,7 +5,6 @@ draft: false
 author: "Felipe Cidade"
 tags: ["cloud", "carreira", "arquitetura"]
 description: "Por que decidi criar um blog e o que você vai encontrar por aqui."
-image: /images/blog/bem-vindo.jpg
 toc: false
 ---
 

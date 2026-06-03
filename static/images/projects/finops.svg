@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#667eea" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#764ba2"/>
+      <stop offset="100%" stop-color="#764ba2" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Baseline -->
+  <line x1="80" y1="340" x2="720" y2="340" stroke="#667eea" stroke-opacity="0.3" stroke-width="1.5"/>
+  <!-- Y axis -->
+  <line x1="80" y1="80" x2="80" y2="340" stroke="#667eea" stroke-opacity="0.3" stroke-width="1.5"/>
+  <!-- Grid horizontals -->
+  <line x1="80" y1="210" x2="720" y2="210" stroke="#667eea" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="4 6"/>
+  <line x1="80" y1="145" x2="720" y2="145" stroke="#667eea" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="4 6"/>
+  <!-- Bars: BEFORE (red tones) and AFTER (purple/blue) - 5 months -->
+  <!-- Month 1 -->
+  <rect x="115" y="140" width="40" height="200" rx="3" fill="#e05" fill-opacity="0.5"/>
+  <rect x="163" y="200" width="40" height="140" rx="3" fill="url(#bar1)"/>
+  <!-- Month 2 -->
+  <rect x="235" y="135" width="40" height="205" rx="3" fill="#e05" fill-opacity="0.45"/>
+  <rect x="283" y="195" width="40" height="145" rx="3" fill="url(#bar1)"/>
+  <!-- Month 3 -->
+  <rect x="355" y="138" width="40" height="202" rx="3" fill="#e05" fill-opacity="0.4"/>
+  <rect x="403" y="215" width="40" height="125" rx="3" fill="url(#bar1)"/>
+  <!-- Month 4 -->
+  <rect x="475" y="140" width="40" height="200" rx="3" fill="#e05" fill-opacity="0.35"/>
+  <rect x="523" y="240" width="40" height="100" rx="3" fill="url(#bar2)"/>
+  <!-- Month 5 -->
+  <rect x="595" y="140" width="40" height="200" rx="3" fill="#e05" fill-opacity="0.3"/>
+  <rect x="643" y="265" width="40" height="75" rx="3" fill="url(#bar2)"/>
+  <!-- Trend line (savings) -->
+  <polyline points="183,200 303,195 423,215 543,240 663,265"
+            fill="none" stroke="#667eea" stroke-width="2.5" stroke-opacity="0.9"
+            stroke-dasharray="6 3"/>
+  <!-- Savings label -->
+  <text x="680" y="258" fill="#667eea" font-size="10" font-family="monospace" font-weight="700">-62%</text>
+  <!-- Legend -->
+  <rect x="270" y="50" width="14" height="14" rx="2" fill="#e05" fill-opacity="0.5"/>
+  <text x="290" y="62" fill="#8888aa" font-size="11" font-family="monospace">Custo anterior</text>
+  <rect x="420" y="50" width="14" height="14" rx="2" fill="url(#bar2)"/>
+  <text x="440" y="62" fill="#8888aa" font-size="11" font-family="monospace">Após FinOps</text>
+  <!-- Title -->
+  <text x="400" y="415" text-anchor="middle" fill="#764ba2" font-size="13"
+        font-family="'Courier New', monospace" font-weight="700" opacity="0.8">FinOps · Redução de Custos Cloud</text>
+</svg>
