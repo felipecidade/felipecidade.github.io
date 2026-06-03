@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#667eea" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#667eea" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background ambient glow -->
+  <circle cx="250" cy="250" r="220" fill="url(#bgGlow)"/>
+
+  <!-- Dashed orbit rings -->
+  <circle cx="250" cy="250" r="163" fill="none" stroke="#667eea" stroke-width="0.8"
+          stroke-opacity="0.22" stroke-dasharray="6 13"/>
+  <circle cx="250" cy="250" r="107" fill="none" stroke="#764ba2" stroke-width="0.7"
+          stroke-opacity="0.18" stroke-dasharray="4 9"/>
+
+  <!--
+    Outer nodes: hexagonal layout, r=163 from center (250,250)
+      0°   top          → (250,  87)
+      60°  top-right    → (391, 169)
+      120° bottom-right → (391, 331)
+      180° bottom       → (250, 413)
+      240° bottom-left  → (109, 331)
+      300° top-left     → (109, 169)
+  -->
+
+  <!-- Lines: center → outer nodes -->
+  <line x1="250" y1="250" x2="250" y2="87"  stroke="#667eea" stroke-width="1.3" stroke-opacity="0.45"/>
+  <line x1="250" y1="250" x2="391" y2="169" stroke="#667eea" stroke-width="1.3" stroke-opacity="0.45"/>
+  <line x1="250" y1="250" x2="391" y2="331" stroke="#667eea" stroke-width="1.3" stroke-opacity="0.45"/>
+  <line x1="250" y1="250" x2="250" y2="413" stroke="#667eea" stroke-width="1.3" stroke-opacity="0.45"/>
+  <line x1="250" y1="250" x2="109" y2="331" stroke="#667eea" stroke-width="1.3" stroke-opacity="0.45"/>
+  <line x1="250" y1="250" x2="109" y2="169" stroke="#667eea" stroke-width="1.3" stroke-opacity="0.45"/>
+
+  <!-- Lines: hexagon perimeter -->
+  <line x1="250" y1="87"  x2="391" y2="169" stroke="#764ba2" stroke-width="0.9" stroke-opacity="0.28"/>
+  <line x1="391" y1="169" x2="391" y2="331" stroke="#764ba2" stroke-width="0.9" stroke-opacity="0.28"/>
+  <line x1="391" y1="331" x2="250" y2="413" stroke="#764ba2" stroke-width="0.9" stroke-opacity="0.28"/>
+  <line x1="250" y1="413" x2="109" y2="331" stroke="#764ba2" stroke-width="0.9" stroke-opacity="0.28"/>
+  <line x1="109" y1="331" x2="109" y2="169" stroke="#764ba2" stroke-width="0.9" stroke-opacity="0.28"/>
+  <line x1="109" y1="169" x2="250" y2="87"  stroke="#764ba2" stroke-width="0.9" stroke-opacity="0.28"/>
+
+  <!-- ─── Central Node ─── -->
+  <circle cx="250" cy="250" r="60" fill="#0d0d1f" stroke="url(#g1)" stroke-width="2.2"
+          filter="url(#bigGlow)"/>
+  <circle cx="250" cy="250" r="52" fill="none" stroke="#667eea" stroke-width="0.6" stroke-opacity="0.35"/>
+
+  <!-- Cloud icon (circle-composite) -->
+  <g fill="url(#g1)" opacity="0.95">
+    <circle cx="237" cy="254" r="13"/>
+    <circle cx="251" cy="245" r="17"/>
+    <circle cx="265" cy="251" r="13"/>
+    <rect x="224" y="254" width="54" height="18" rx="1"/>
+  </g>
+  <!-- Cloud highlight -->
+  <path d="M238 242 C242 238 248 236 254 237" fill="none"
+        stroke="white" stroke-width="1.3" stroke-opacity="0.28" stroke-linecap="round"/>
+
+  <!-- ─── Outer Node: Top — IaC / Terraform ─── -->
+  <circle cx="250" cy="87" r="31" fill="#0d0d1f" stroke="#667eea" stroke-width="1.6"
+          filter="url(#glow)"/>
+  <text x="250" y="83" text-anchor="middle" fill="#667eea"
+        font-size="11" font-family="'Courier New', Courier, monospace" font-weight="700">IaC</text>
+  <text x="250" y="97" text-anchor="middle" fill="#8888aa"
+        font-size="8.5" font-family="'Courier New', Courier, monospace">Terraform</text>
+
+  <!-- ─── Outer Node: Top-Right — Azure DevOps ─── -->
+  <circle cx="391" cy="169" r="31" fill="#0d0d1f" stroke="#764ba2" stroke-width="1.6"
+          filter="url(#glow)"/>
+  <text x="391" y="165" text-anchor="middle" fill="#764ba2"
+        font-size="9" font-family="'Courier New', Courier, monospace" font-weight="700">DevOps</text>
+  <text x="391" y="179" text-anchor="middle" fill="#8888aa"
+        font-size="8.5" font-family="'Courier New', Courier, monospace">Azure</text>
+
+  <!-- ─── Outer Node: Bottom-Right — Kubernetes ─── -->
+  <circle cx="391" cy="331" r="31" fill="#0d0d1f" stroke="#667eea" stroke-width="1.6"
+          filter="url(#glow)"/>
+  <text x="391" y="327" text-anchor="middle" fill="#667eea"
+        font-size="11" font-family="'Courier New', Courier, monospace" font-weight="700">K8s</text>
+  <text x="391" y="341" text-anchor="middle" fill="#8888aa"
+        font-size="8.5" font-family="'Courier New', Courier, monospace">Containers</text>
+
+  <!-- ─── Outer Node: Bottom — FinOps ─── -->
+  <circle cx="250" cy="413" r="31" fill="#0d0d1f" stroke="#764ba2" stroke-width="1.6"
+          filter="url(#glow)"/>
+  <text x="250" y="409" text-anchor="middle" fill="#764ba2"
+        font-size="11" font-family="'Courier New', Courier, monospace" font-weight="700">FinOps</text>
+  <text x="250" y="423" text-anchor="middle" fill="#8888aa"
+        font-size="8.5" font-family="'Courier New', Courier, monospace">Cost Gov.</text>
+
+  <!-- ─── Outer Node: Bottom-Left — CI/CD ─── -->
+  <circle cx="109" cy="331" r="31" fill="#0d0d1f" stroke="#667eea" stroke-width="1.6"
+          filter="url(#glow)"/>
+  <text x="109" y="327" text-anchor="middle" fill="#667eea"
+        font-size="10" font-family="'Courier New', Courier, monospace" font-weight="700">CI/CD</text>
+  <text x="109" y="341" text-anchor="middle" fill="#8888aa"
+        font-size="8.5" font-family="'Courier New', Courier, monospace">Pipeline</text>
+
+  <!-- ─── Outer Node: Top-Left — SecOps / Governance ─── -->
+  <circle cx="109" cy="169" r="31" fill="#0d0d1f" stroke="#764ba2" stroke-width="1.6"
+          filter="url(#glow)"/>
+  <text x="109" y="165" text-anchor="middle" fill="#764ba2"
+        font-size="9" font-family="'Courier New', Courier, monospace" font-weight="700">SecOps</text>
+  <text x="109" y="179" text-anchor="middle" fill="#8888aa"
+        font-size="8.5" font-family="'Courier New', Courier, monospace">Govern.</text>
+
+  <!-- Floating particles -->
+  <circle cx="190" cy="143" r="2.5" fill="#667eea" opacity="0.65"/>
+  <circle cx="318" cy="133" r="2"   fill="#764ba2" opacity="0.55"/>
+  <circle cx="143" cy="250" r="2"   fill="#667eea" opacity="0.45"/>
+  <circle cx="360" cy="263" r="2.5" fill="#764ba2" opacity="0.50"/>
+  <circle cx="208" cy="381" r="2"   fill="#667eea" opacity="0.48"/>
+  <circle cx="300" cy="374" r="2.5" fill="#764ba2" opacity="0.40"/>
+  <circle cx="446" cy="250" r="2"   fill="#667eea" opacity="0.32"/>
+  <circle cx="54"  cy="250" r="2"   fill="#764ba2" opacity="0.38"/>
+  <circle cx="250" cy="32"  r="2"   fill="#667eea" opacity="0.28"/>
+  <circle cx="250" cy="468" r="2"   fill="#764ba2" opacity="0.28"/>
+  <circle cx="174" cy="308" r="1.8" fill="#667eea" opacity="0.38"/>
+  <circle cx="330" cy="196" r="1.8" fill="#764ba2" opacity="0.38"/>
+  <circle cx="172" cy="196" r="1.8" fill="#667eea" opacity="0.38"/>
+  <circle cx="329" cy="310" r="1.8" fill="#764ba2" opacity="0.38"/>
+  <circle cx="330" cy="250" r="1.5" fill="#667eea" opacity="0.30"/>
+  <circle cx="170" cy="250" r="1.5" fill="#764ba2" opacity="0.30"/>
+</svg>
