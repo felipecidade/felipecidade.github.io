@@ -1,7 +1,7 @@
 ---
 title: "Como construí um PWA de camping com custo de infraestrutura próximo de zero"
 date: 2026-06-03
-draft: false
+draft: true
 author: "Felipe Cidade"
 tags: ["cloudflare", "edge", "pwa", "react", "arquitetura", "finops"]
 description: "A stack do campd.app.br: Workers, D1, KV e VAPID na edge da Cloudflare. Decisões deliberadas que parecem erradas mas fazem sentido."

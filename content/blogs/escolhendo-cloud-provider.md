@@ -1,7 +1,7 @@
 ---
 title: "AWS, Azure ou GCP: como escolher o cloud provider certo"
 date: 2026-05-15
-draft: false
+draft: true
 author: "Felipe Cidade"
 tags: ["aws", "azure", "gcp", "arquitetura", "estratégia"]
 description: "Um guia prático para ajudar CTOs e arquitetos a tomar a decisão certa — sem viés de vendor."
