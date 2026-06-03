@@ -71,7 +71,7 @@ params:
       disableExperience: false
       disableEducation: true
       disableProjects: false
-      disableAchievements: false
+      disableAchievements: true
       disableContact: false
 
   hero:
@@ -195,7 +195,7 @@ params:
     items: []
 
   achievements:
-    enable: true
+    enable: false
     title: "Certificações"
     items:
       - title: Microsoft Certified – Azure Fundamentals
