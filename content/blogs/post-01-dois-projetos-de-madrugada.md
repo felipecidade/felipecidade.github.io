@@ -8,13 +8,13 @@ description: "Campd e o promo-agent têm origens diferentes, mas a mesma condiç
 toc: false
 ---
 
-O Campd começou no WhatsApp. Não como ideia de produto, como thread de grupo que ninguém conseguia acompanhar.
+O [Campd](https://campd.app.br/) começou no WhatsApp. Não como ideia de produto, como thread de grupo que ninguém conseguia acompanhar.
 
 Toda expedição de camping que organizo passa pelo mesmo ciclo: alguém propõe uma data, alguém pergunta onde, alguém manda um link de camping, alguém pergunta de novo porque a mensagem se perdeu, e no final ninguém tem certeza do que foi decidido. O WhatsApp não foi feito para isso. Funciona para conversa, não para coordenação com estado persistente. Quando a thread chega em 60 mensagens e a informação importante está no meio, o problema já não é de comunicação, é de ferramenta.
 
 O Campd nasceu para ser essa ferramenta. Não houve discovery, não houve pesquisa de mercado, não houve canvas. Houve um problema que eu vivia em primeira pessoa e a pergunta prática de quanto tempo levaria para construir algo que resolvesse. Começou como site, está virando app porque o uso em campo pede isso, e a evolução está sendo guiada pela mesma lógica: o que trava uma expedição real vai antes.
 
-O promo-agent tem uma origem diferente. Não nasceu de frustração pessoal direta, mas de observação.
+O [promo-agent](https://github.com/felipecidade/promo-agent/) tem uma origem diferente. Não nasceu de frustração pessoal direta, mas de observação.
 
 Grupos de promoção no WhatsApp são um fenômeno curioso. Existem dezenas deles, cada um com milhares de membros, e a curadoria na maioria dos casos é feita manualmente por uma ou duas pessoas. O fluxo é sempre parecido: abre o Mercado Livre, navega pelas ofertas, avalia se o desconto é real ou é preço inflado ontem, copia o link de afiliado, escreve uma mensagem, posta. Repete. Às vezes de hora em hora.
 
