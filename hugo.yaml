@@ -68,7 +68,7 @@ params:
     enableSeparator: false
     menus:
       disableAbout: false
-      disableExperience: false
+      disableExperience: true
       disableEducation: true
       disableProjects: false
       disableAchievements: false
