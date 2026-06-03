@@ -80,9 +80,9 @@ params:
     title: "Felipe Cidade."
     subtitle: "Tech Manager | Cloud Solutions & Software Architecture"
     content: >
-      Na dti digital, lidero times de engenharia na interseção entre estratégia técnica,
-      gestão de pessoas e eficiência de negócio. Minha trajetória une mais de 20 anos
-      construindo software e arquiteturas cloud — do código à sala de C-level.
+      Lidero times de engenharia na dti digital com responsabilidade sobre entrega, pessoas
+      e resultado financeiro da unidade. Vinte anos construindo software e arquiteturas cloud.
+      Hoje o trabalho é fazer times fazerem isso bem.
     image: /images/hero.svg
     bottomImage:
       enable: true
@@ -103,15 +103,15 @@ params:
     title: "Sobre Mim"
     image: "/images/me.jpg"
     content: |-
-      Sou **Tech Manager** na [dti digital](https://www.dtidigital.com.br/), onde atuo na interseção entre
-      estratégia técnica, gestão de pessoas e resultado de negócio. Lidero times de engenharia
-      entregando valor contínuo a clientes, com governança sobre decisões de Cloud, DevOps e modernização.
+      Sou **Tech Manager** na [dti digital](https://www.dtidigital.com.br/), responsável por times de
+      engenharia com accountability sobre entrega, pessoas e saúde financeira da unidade. O trabalho
+      envolve desde decisões de arquitetura e cloud até gestão de carreira, P&L e relacionamento com clientes.
 
-      Minha trajetória começou no desenvolvimento de software e evoluiu pela arquitetura de soluções,
-      passando pelo Cloud Center of Excellence da dti — onde fui responsável por padrões de migração,
-      Infrastructure as Code e arquitetura de referência em Azure.
+      Antes de virar manager, passei anos como Cloud Architect no Cloud Center of Excellence da dti,
+      construindo padrões de migração e arquiteturas de referência em Azure com Terraform. É esse
+      background técnico que ancora as decisões de gestão.
 
-      Neste blog compartilho o que aprendo no dia a dia sobre cloud, arquitetura e liderança técnica.
+      Neste blog escrevo sobre o que aprendo na prática: cloud, arquitetura e o que é ser Tech Manager de verdade.
     skills:
       enable: true
       title: "Tecnologias & Plataformas:"
@@ -151,7 +151,7 @@ params:
           Atuação no Cloud Center of Excellence (CCoE) de um cliente internacional, responsável por
           padrões de migração on-premise para cloud e arquitetura de referência. Desenvolvimento de
           soluções de Infrastructure as Code com Terraform e ARM Templates no Azure. Liderança de
-          time de alta performance, implementação de pipelines CI/CD e conduç de knowledge-sharing
+          time de alta performance, implementação de pipelines CI/CD e condução de knowledge-sharing
           sessions sobre melhores práticas Azure.
 
       - job: "Software Development Manager"
@@ -258,8 +258,8 @@ params:
     enable: true
     title: "Contato"
     content: >
-      Quer conversar sobre arquitetura cloud, oportunidades ou apenas trocar uma ideia?
-      Minha caixa de entrada está aberta!
+      Quer conversar sobre arquitetura cloud, oportunidades ou uma dúvida técnica específica?
+      Me manda uma mensagem.
     btnName: "Enviar e-mail"
     btnLink: "mailto:felipe.cidade@outlook.com"
 
