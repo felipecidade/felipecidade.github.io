@@ -68,7 +68,7 @@ params:
     enableSeparator: false
     menus:
       disableAbout: false
-      disableExperience: true
+      disableExperience: false
       disableEducation: true
       disableProjects: false
       disableAchievements: false
@@ -128,75 +128,66 @@ params:
   experience:
     enable: true
     items:
-      - job: "Tech Manager"
-        company: "dti digital"
+      - company: "dti digital"
         companyUrl: "https://www.dtidigital.com.br/"
-        date: "Set 2025 - Presente"
-        featuredLink:
-          enable: false
-        content: >
-          Liderança de times de engenharia na intersecção entre estratégia técnica, gestão de pessoas
-          e eficiência de negócio. Responsável pelo P&L da unidade, monitorando KPIs como Billability,
-          Margem de Contribuição e Custo Médio. Gestão de carreira, mentoria técnica e planos de
-          sucessão. Atuação como Trusted Advisor junto a clientes, com governança sobre decisões
-          arquiteturais de Cloud, DevOps e Modernização.
+        jobs:
+          - name: "Tech Manager"
+            date: "Set 2025 - Presente"
+            content: >
+              Liderança de times de engenharia na intersecção entre estratégia técnica, gestão de pessoas
+              e eficiência de negócio. Responsável pelo P&L da unidade, monitorando KPIs como Billability,
+              Margem de Contribuição e Custo Médio. Gestão de carreira, mentoria técnica e planos de
+              sucessão. Atuação como Trusted Advisor junto a clientes, com governança sobre decisões
+              arquiteturais de Cloud, DevOps e Modernização.
 
-      - job: "Cloud Architect"
-        company: "dti digital"
-        companyUrl: "https://www.dtidigital.com.br/"
-        date: "Nov 2022 - Dez 2025"
-        featuredLink:
-          enable: false
-        content: >
-          Atuação no Cloud Center of Excellence (CCoE) de um cliente internacional, responsável por
-          padrões de migração on-premise para cloud e arquitetura de referência. Desenvolvimento de
-          soluções de Infrastructure as Code com Terraform e ARM Templates no Azure. Liderança de
-          time de alta performance, implementação de pipelines CI/CD e condução de knowledge-sharing
-          sessions sobre melhores práticas Azure.
+          - name: "Cloud Architect"
+            date: "Nov 2022 - Dez 2025"
+            content: >
+              Atuação no Cloud Center of Excellence (CCoE) de um cliente internacional, responsável por
+              padrões de migração on-premise para cloud e arquitetura de referência. Desenvolvimento de
+              soluções de Infrastructure as Code com Terraform e ARM Templates no Azure. Liderança de
+              time de alta performance, implementação de pipelines CI/CD e condução de knowledge-sharing
+              sessions sobre melhores práticas Azure.
 
-      - job: "Software Development Manager"
-        company: "GVdasa Inteligência Educacional"
+      - company: "GVdasa Inteligência Educacional"
         companyUrl: "https://www.gvdasa.com.br/"
-        date: "Mai 2021 - Set 2022"
-        featuredLink:
-          enable: false
-        content: >
-          Gestão de times de desenvolvimento com Kanban e SCRUM. Criação de métricas de controle de
-          produção, definição de OKRs alinhados à estratégia da empresa. Planejamento de melhorias
-          para entrega contínua e descontinuação gradual de sistemas monolíticos legados.
+        jobs:
+          - name: "Software Development Manager"
+            date: "Mai 2021 - Set 2022"
+            content: >
+              Gestão de times de desenvolvimento com Kanban e SCRUM. Criação de métricas de controle de
+              produção, definição de OKRs alinhados à estratégia da empresa. Planejamento de melhorias
+              para entrega contínua e descontinuação gradual de sistemas monolíticos legados.
 
-      - job: "PLM Solution Architect"
-        company: "Produttar Software"
+      - company: "Produttar Software"
         companyUrl: "#"
-        date: "Abr 2019 - Mar 2020"
-        featuredLink:
-          enable: false
-        content: >
-          Análise de requisitos para implantação, mapeamento de fluxos de valor do cliente no ciclo
-          de vida de produto. Criação de ROADMAP com payback para jornada de transformação digital.
-          Definição de escopo e requisitos para integrações entre sistemas PLM, ERP e MES.
+        jobs:
+          - name: "PLM Solution Architect"
+            date: "Abr 2019 - Mar 2020"
+            content: >
+              Análise de requisitos para implantação, mapeamento de fluxos de valor do cliente no ciclo
+              de vida de produto. Criação de ROADMAP com payback para jornada de transformação digital.
+              Definição de escopo e requisitos para integrações entre sistemas PLM, ERP e MES.
 
-      - job: "Solutions Architect"
-        company: "Newgraph"
+      - company: "Newgraph"
         companyUrl: "#"
-        date: "Set 2015 - Jun 2017"
-        featuredLink:
-          enable: false
-        content: >
-          Levantamento de requisitos, mapeamento de workflows e definição de escopo para implantação
-          de soluções SIEMENS. Gestão do time de desenvolvimento e suporte técnico. Introdução de
-          metodologias ágeis no gerenciamento de projetos de software.
+        jobs:
+          - name: "Solutions Architect"
+            date: "Set 2015 - Jun 2017"
+            content: >
+              Levantamento de requisitos, mapeamento de workflows e definição de escopo para implantação
+              de soluções SIEMENS. Gestão do time de desenvolvimento e suporte técnico. Introdução de
+              metodologias ágeis no gerenciamento de projetos de software.
 
-      - job: "Development Team Lead"
-        company: "Linq Sistemas"
+      - company: "Linq Sistemas"
         companyUrl: "#"
-        date: "Mar 2005 - Set 2015"
-        featuredLink:
-          enable: false
-        content: >
-          10+ anos coordenando times de desenvolvimento web e desktop com metodologias ágeis.
-          Liderança no desenvolvimento de novos produtos e implementações in loco com treinamento.
-          Principais clientes: GM, Braskem, Souza Cruz, Stihl, Universal Leaf Tabacos.
+        jobs:
+          - name: "Development Team Lead"
+            date: "Mar 2005 - Set 2015"
+            content: >
+              10+ anos coordenando times de desenvolvimento web e desktop com metodologias ágeis.
+              Liderança no desenvolvimento de novos produtos e implementações in loco com treinamento.
+              Principais clientes: GM, Braskem, Souza Cruz, Stihl, Universal Leaf Tabacos.
 
   education:
     enable: false
