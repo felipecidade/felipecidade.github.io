@@ -14,4 +14,6 @@ Trabalho como Cloud Solutions Architect. O dia a dia é decidir onde rodar carga
 
 O blog é onde eu coloco isso. Arquitetura cloud com os trade-offs reais, não os do whitepaper. IaC, Kubernetes, CI/CD com o que funciona na prática, incluindo o que não funcionou. Estudos de caso de projetos com o suficiente anonimizado para eu poder ser honesto sobre o que deu errado.
 
+Além do trabalho na dti, tenho dois projetos próprios que também vão aparecer aqui. O [campd](https://campd.app.br) é um PWA de planejamento de expedições e camping que construí do zero, rodando inteiramente na edge da Cloudflare com custo de infraestrutura próximo de zero. O promo-agent é um agente autônomo que monitora promoções no Mercado Livre e distribui para grupos de WhatsApp, com uma solução interessante para contornar o bloqueio que a API do ML impõe para contas brasileiras desde 2024. Os dois têm decisões de arquitetura que valem um post específico.
+
 Se chegou até aqui por acaso, os projetos na página principal dão uma ideia do tipo de trabalho que faço. Se quiser conversar sobre algum post ou tem uma dúvida específica, me manda um [e-mail](mailto:felipe.cidade@outlook.com) ou chama no [LinkedIn](https://www.linkedin.com/in/felipecidade).
